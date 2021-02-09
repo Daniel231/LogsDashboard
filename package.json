@@ -9,14 +9,21 @@
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon src/server/index.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "make_copy":  "rm -rf ~/git/react-node-boilerplate-for-interviews-master; mkdir ~/git/react-node-boilerplate-for-interviews-master ; cp -r ~/git/boilerplate_bak ~/git/react-node-boilerplate-for-interviews-master ; cd ~/git/react-node-boilerplate-for-interviews-master/boilerplate_bak ; npm install"
+    "make_copy": "rm -rf ~/git/react-node-boilerplate-for-interviews-master; mkdir ~/git/react-node-boilerplate-for-interviews-master ; cp -r ~/git/boilerplate_bak ~/git/react-node-boilerplate-for-interviews-master ; cd ~/git/react-node-boilerplate-for-interviews-master/boilerplate_bak ; npm install"
   },
   "author": "Sandeep Raveesh",
   "license": "ISC",
   "dependencies": {
+    "apexcharts": "^3.24.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "react": "^16.12.0",
+    "react-apexcharts": "^1.3.7",
+    "react-charts": "^2.0.0-beta.7",
     "react-dom": "^16.5.2",
     "styled-components": "^4.4.1"
   },
